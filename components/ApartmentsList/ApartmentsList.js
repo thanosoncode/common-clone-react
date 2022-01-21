@@ -39,7 +39,7 @@ const ApartmentsList = () => {
     <Wrapper blur={blur}>
       <Header>
         <h1>Thank you.</h1>
-        <p>We're excited to help you find your new home!</p>
+        <p>We&apos;re excited to help you find your new home!</p>
       </Header>
       <Section>
         <Heading>
