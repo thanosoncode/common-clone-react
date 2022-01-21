@@ -49,7 +49,7 @@ const Step1 = () => {
           </ul>
         </StyledNav>
         <StyledTitleDiv>
-          <h1>Coliving and apartments for today's renter.</h1>
+          <h1>Coliving and apartments for today&apos;s renter.</h1>
           <p>
             Find beautiful spaces with exceptional service, convenient
             amenities, and all-inclusive options.

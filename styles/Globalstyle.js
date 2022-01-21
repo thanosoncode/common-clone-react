@@ -6,7 +6,7 @@ export const theme = {
 };
 
 export const GlobalStyle = createGlobalStyle`
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
   * , *::after, *::before{
     margin:0;
@@ -15,6 +15,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Neuton', serif;
+    font-family: 'Roboto', sans-serif;
   }
 `;

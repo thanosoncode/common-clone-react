@@ -27,7 +27,7 @@ const Step4 = () => {
           <h1>Get more from your rent in New York.</h1>
           <section>
             <ImageWrapper>
-              <Image src="/static/images/step4b.jpg" layout="fill" />
+              <Image src="/static/images/step4b.jpg" layout="fill" alt="" />
             </ImageWrapper>
             <p>
               When you rent with Common, you get more than an apartment. You’ll

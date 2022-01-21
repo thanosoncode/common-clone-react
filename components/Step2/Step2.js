@@ -95,10 +95,10 @@ const Step2 = () => {
         <Footer>
           <section>
             <div>
-              <Image src="/static/images/person1.png" layout="fill" />
+              <Image src="/static/images/person1.png" layout="fill" alt="" />
             </div>
             <div>
-              Common is the best option if you're new to{" "}
+              Common is the best option if you&apos;re new to{" "}
               <small>{selectionsList[0]}</small>.Service is professional and
               quick if you have any requests.
               <span></span>

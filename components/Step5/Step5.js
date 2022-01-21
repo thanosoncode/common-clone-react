@@ -86,7 +86,7 @@ const Step5 = () => {
           })}
         </div>
       </Section>
-      <Link href="apartments">
+      <Link href="apartments" passHref>
         <PrimaryButton
           disabled={!isButtonEnabled}
           opacity={isButtonEnabled ? "1" : "0.6"}

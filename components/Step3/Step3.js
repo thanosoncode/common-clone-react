@@ -47,7 +47,7 @@ const Step3 = () => {
         <Footer>
           <section>
             <div>
-              <Image src="/static/images/person2.png" layout="fill" />
+              <Image src="/static/images/person2.png" layout="fill" alt="" />
             </div>
             <div>
               The application and interview process was quick and efficient and
