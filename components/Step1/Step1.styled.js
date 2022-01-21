@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const StyledMain = styled.main`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   color: white;
   flex-shrink: 0;
+
   transition: 0.4s ease;
   transform: ${({ step }) => {
     return step;
@@ -64,6 +65,7 @@ export const StyledNav = styled.nav`
 
     span {
       display: block;
+      font-size: 36px;
     }
 
     ul {
@@ -129,18 +131,21 @@ export const StyledTitleDiv = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-top: 0;
+    margin-top: 20px;
     width: 100%;
     text-align: center;
     padding: 0;
 
     h1 {
-      font-size: 44px;
+      font-size: 38px;
+      margin-bottom: 20px;
+      font-weight: 800;
     }
     p {
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
       width: 100%;
+      font-weight: 600;
     }
 
     p:last-child {
@@ -163,7 +168,10 @@ export const StyledSection = styled.section`
   @media (max-width: 768px) {
     width: 100%;
     max-width: 100%;
-    padding: 10px 20px;
+    padding: 20px 20px;
+    header {
+      padding-bottom: 10px;
+    }
   }
 
   header {

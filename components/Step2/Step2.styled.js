@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-shrink: 0;
@@ -9,6 +9,7 @@ export const Container = styled.div`
   transform: ${({ step }) => {
     return step;
   }};
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -53,8 +54,8 @@ export const Section = styled.section`
     margin: 0 auto;
 
     h1 {
-      font-size: 26px;
-      margin: 20px 0;
+      font-size: 22px;
+      margin: 30px 0;
     }
   }
 `;
@@ -136,6 +137,9 @@ export const HeaderMini = styled.div`
     p:last-child {
       display: none;
     }
+    h1 {
+      font-size: 36px;
+    }
     padding: 0 20px;
     margin-top: 70px;
   }
@@ -182,13 +186,17 @@ export const Table = styled.table`
 
   @media (max-width: 768px) {
     margin-bottom: 0;
+    font-size: 14px;
+    color: #ccc;
+
     td,
     th {
-      padding: 10px;
+      padding: 5px;
+      font-size: 14px;
     }
 
     th td {
-      padding: 10px;
+      padding: 5px;
     }
   }
 `;

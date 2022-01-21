@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   filter: blur(${({ blur }) => blur});
   position: relative;
@@ -44,6 +44,7 @@ export const Heading = styled.div`
   margin: 50px auto 30px;
   color: #444;
   overflow: hidden;
+  padding-left: 50px;
 
   h5 {
     font-size: 24px;
@@ -53,26 +54,39 @@ export const Heading = styled.div`
   p {
     font-size: 17px;
   }
+
+  @media (max-width: 500px) {
+    padding: 0 10px;
+  }
 `;
 export const Grid = styled.header`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
+  grid-template-columns: repeat(auto-fit, 400px);
   width: 100%;
   padding: 20px 70px;
 
   gap: 40px;
   justify-content: center;
   overflow: hidden;
+
+  @media (max-width: 420px) {
+    grid-template-columns: repeat(auto-fit, 360px);
+  }
 `;
 
 export const ImageWrapper = styled.div`
   position: relative;
-  width: 400px;
+  width: 100%;
   height: 200px;
 
   img {
     object-fit: cover;
     object-position: center;
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    width: calc(100% -10px);
   }
 `;
 export const GridItem = styled.div`

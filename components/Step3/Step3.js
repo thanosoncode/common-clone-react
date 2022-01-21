@@ -31,9 +31,12 @@ const Step3 = () => {
     <Container step={`translateX(${-step}%)`}>
       <Header>
         <Bar />
-        <HeaderMini style={{ paddingBottom: "50px" }}>
+        <HeaderMini>
           <p>We’re ready to help you find your next home.</p>
-          <h1>We make your apartment search in NYC faster than ever</h1>
+          <h1>
+            We make your apartment search in <span>{city}</span> faster than
+            ever
+          </h1>
           <p>
             Whether you’re renting an all-inclusive coliving suite or a private
             apartment, you’ll experience the ease of keyless entry, a friendly

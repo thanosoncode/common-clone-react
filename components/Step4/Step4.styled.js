@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-shrink: 0;
@@ -62,7 +62,7 @@ export const HeaderMini = styled.div`
 
     h1 {
       font-size: 24px;
-      margin-bottom: 5px;
+      margin-bottom: 25px;
     }
 
     p {
@@ -99,8 +99,13 @@ export const ImageWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 350px;
-    height: 150px;
+    width: 400px;
+    height: 160px;
+  }
+
+  @media (max-width: 500px) {
+    width: calc(100% - 10px);
+    height: 160px;
   }
 `;
 

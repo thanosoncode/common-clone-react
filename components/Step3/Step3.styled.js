@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-shrink: 0;
@@ -32,8 +32,9 @@ export const Header = styled.header`
 `;
 
 export const HeaderMini = styled.div`
-  margin-top: 100px;
+  margin-top: 140px;
   max-width: 500px;
+  padding-bottom: 50px;
   p {
     margin-bottom: 10px;
     color: gray;
@@ -53,8 +54,12 @@ export const HeaderMini = styled.div`
     color: white;
   }
 
+  span {
+    text-transform: capitalize;
+  }
+
   @media (max-width: 768px) {
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
     max-width: 100%;
     margin: 70px 0 0 0;
 
@@ -64,9 +69,12 @@ export const HeaderMini = styled.div`
 
     p {
       color: #ddd;
+      font-size: 17px;
     }
     p:last-child {
-      max-width: 370px;
+      max-width: 400px;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 `;
@@ -98,7 +106,7 @@ export const Section = styled.section`
 
     h1 {
       font-size: 26px;
-      margin: 20px 0;
+      margin: 30px 0;
     }
 
     p {

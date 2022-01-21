@@ -13,7 +13,19 @@ export default function Home() {
           rel="stylesheet"
         ></link>
       </Head>
-      <Hero />
+      <div
+        style={{
+          backgroundColor: "white",
+          overflow: "hidden",
+          width: "100vw",
+          height: "100vh",
+          position: "absolute",
+          top: "0",
+          left: "0",
+        }}
+      >
+        <Hero />
+      </div>
     </div>
   );
 }

@@ -44,10 +44,11 @@ const Step2 = () => {
             amenities, free events, and exclusive perks.
           </p>
         </HeaderMini>
+
         <Table>
           <thead>
             <tr>
-              <td>Type</td>
+              <td style={{ paddingLeft: "15px" }}>Type</td>
               <td style={{ textAlign: "center" }}>All-inclusive</td>
               <td style={{ textAlign: "center" }}>Furnished</td>
               <td style={{ textAlign: "center" }}>Perks</td>
@@ -57,7 +58,7 @@ const Step2 = () => {
 
           <tbody>
             <tr>
-              <td>Coliving</td>
+              <td style={{ paddingLeft: "15px" }}>Coliving</td>
               <td style={{ textAlign: "center", fontSize: "20px" }}>
                 <BsFillCheckCircleFill />
               </td>
@@ -72,7 +73,7 @@ const Step2 = () => {
               </td>
             </tr>
             <tr>
-              <td>Studios, 1 &amp; 2 Beds</td>
+              <td style={{ paddingLeft: "15px" }}>Studios, 1 &amp; 2 Beds</td>
               <td style={{ textAlign: "center", fontSize: "20px" }}>-</td>
               <td style={{ textAlign: "center", fontSize: "20px" }}>-</td>
               <td style={{ textAlign: "center", fontSize: "20px" }}>
@@ -83,13 +84,14 @@ const Step2 = () => {
               </td>
             </tr>
             <tr>
-              <td colSpan="5">
+              <td colSpan="5" style={{ paddingLeft: "15px" }}>
                 All inclusive rent includes WiFi, utilities, weekly cleanings,
                 and more.
               </td>
             </tr>
           </tbody>
         </Table>
+
         <Footer>
           <section>
             <div>

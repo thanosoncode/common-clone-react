@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/static/images/step5.jpg");
@@ -22,7 +22,8 @@ export const Container = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 25px;
+    padding: 35px 25px 25px 25px;
+
     h1 {
       font-size: 20px;
     }
@@ -64,6 +65,7 @@ export const Section = styled.section`
 
     h4 {
       margin-bottom: 30px;
+      font-weight: 800;
     }
 
     div {

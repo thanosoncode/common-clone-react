@@ -6,5 +6,5 @@ export const Container = styled.section`
 
   display: flex;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
