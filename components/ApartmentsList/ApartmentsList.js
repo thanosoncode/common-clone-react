@@ -20,13 +20,12 @@ import {
 
 const ApartmentsList = () => {
   const [apartments, setApartments] = useState(data);
-  console.log(data);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storage = localStorage.getItem("apts");
+      const storage = sessionStorage.getItem("apts");
 
-      return storage ? setApartments(JSON.parse(storage)) : setApartments(data);
+      setApartments(JSON.parse(storage));
     }
   }, []);
 

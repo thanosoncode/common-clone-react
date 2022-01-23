@@ -33,7 +33,7 @@ const Step5 = () => {
   const apts = useSelector((state) => state.apartments.value);
 
   const saveToLocalStorage = () => {
-    localStorage.setItem("apts", JSON.stringify(apts));
+    sessionStorage.setItem("apts", JSON.stringify(apts));
   };
 
   return (
@@ -86,7 +86,7 @@ const Step5 = () => {
           })}
         </div>
       </Section>
-      <Link href="apartments" passHref>
+      <Link href="/apartments" passHref>
         <PrimaryButton
           disabled={!isButtonEnabled}
           opacity={isButtonEnabled ? "1" : "0.6"}

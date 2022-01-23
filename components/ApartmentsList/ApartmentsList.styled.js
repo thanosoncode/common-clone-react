@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   min-height: 100vh;
   filter: blur(${({ blur }) => blur});
   position: relative;
-  transition: 1s ease;
+  transition: 0.5s ease;
 `;
 
 export const Header = styled.header`
@@ -185,7 +185,7 @@ export const PrimaryButton = styled.button`
   display: block;
   width: 300px;
 
-  margin: 30px auto;
+  margin: 130px auto 60px auto;
 
   padding: 20px;
   background: ${({ theme }) => theme.color};
