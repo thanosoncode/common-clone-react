@@ -92,7 +92,7 @@ const Step1 = () => {
         <PrimaryButton
           onClick={() => {
             dispatch(filterByCity({ city }));
-            setTimeout(() => dispatch(goToNextStep()), 500);
+            setTimeout(() => dispatch(goToNextStep()), 400);
           }}
         >
           Find My Home

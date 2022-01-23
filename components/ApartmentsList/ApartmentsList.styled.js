@@ -26,6 +26,7 @@ export const Header = styled.header`
   h1 {
     font-size: 50px;
     margin-bottom: 15px;
+    font-weight: 700;
   }
 
   p {
@@ -49,6 +50,7 @@ export const Heading = styled.div`
   h5 {
     font-size: 24px;
     margin-bottom: 15px;
+    font-weight: 500;
   }
 
   p {
@@ -101,8 +103,8 @@ export const Flex = styled.div`
   border-bottom: 1px solid rgb(235, 235, 235);
 
   h1 {
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 28px;
+    font-weight: 700;
     text-transform: capitalize;
     color: #444;
   }
@@ -164,6 +166,31 @@ export const Button = styled.button`
   background: ${({ theme }) => theme.color};
   color: white;
   font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: ${({ theme }) => theme.colorDark};
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    font-size: 16px;
+  }
+`;
+
+export const PrimaryButton = styled.button`
+  display: block;
+  width: 300px;
+
+  margin: 30px auto;
+
+  padding: 20px;
+  background: ${({ theme }) => theme.color};
+  color: white;
+  font-size: 17px;
   text-align: center;
   font-weight: 600;
   border: none;

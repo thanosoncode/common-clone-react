@@ -12,6 +12,7 @@ import {
   HeaderMini,
   Table,
   Footer,
+  Td,
 } from "./Step2.styled";
 import Bar from "../Bar/Bar";
 import { BsFillCheckCircleFill } from "react-icons/bs";
@@ -59,29 +60,29 @@ const Step2 = () => {
           <tbody>
             <tr>
               <td style={{ paddingLeft: "15px" }}>Coliving</td>
-              <td style={{ textAlign: "center", fontSize: "20px" }}>
+              <Td>
                 <BsFillCheckCircleFill />
-              </td>
-              <td style={{ textAlign: "center", fontSize: "20px" }}>
+              </Td>
+              <Td>
                 <BsFillCheckCircleFill />
-              </td>
-              <td style={{ textAlign: "center", fontSize: "20px" }}>
+              </Td>
+              <Td>
                 <BsFillCheckCircleFill />
-              </td>
-              <td style={{ textAlign: "center", fontSize: "20px" }}>
+              </Td>
+              <Td>
                 <BsFillCheckCircleFill />
-              </td>
+              </Td>
             </tr>
             <tr>
               <td style={{ paddingLeft: "15px" }}>Studios, 1 &amp; 2 Beds</td>
-              <td style={{ textAlign: "center", fontSize: "20px" }}>-</td>
-              <td style={{ textAlign: "center", fontSize: "20px" }}>-</td>
-              <td style={{ textAlign: "center", fontSize: "20px" }}>
+              <td>-</td>
+              <td>-</td>
+              <Td>
                 <BsFillCheckCircleFill />
-              </td>
-              <td style={{ textAlign: "center", fontSize: "20px" }}>
+              </Td>
+              <Td>
                 <BsFillCheckCircleFill />
-              </td>
+              </Td>
             </tr>
             <tr>
               <td colSpan="5" style={{ paddingLeft: "15px" }}>
@@ -115,7 +116,7 @@ const Step2 = () => {
                 key={index}
                 onClick={() => {
                   dispatch(filterByMovingTime({ time: item.time }));
-                  setTimeout(() => dispatch(goToNextStep()), 1000);
+                  setTimeout(() => dispatch(goToNextStep()), 400);
 
                   setSelected(item.name);
                 }}

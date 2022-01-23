@@ -74,7 +74,7 @@ const Step3 = () => {
                 key={index}
                 onClick={() => {
                   dispatch(filterByDuration({ duration: item.duration, city }));
-                  setTimeout(() => dispatch(goToNextStep()), 1000);
+                  setTimeout(() => dispatch(goToNextStep()), 400);
                   setSelected(item.name);
                 }}
                 selected={selected}

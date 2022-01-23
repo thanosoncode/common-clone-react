@@ -7,7 +7,7 @@ export const StyledMain = styled.main`
   color: white;
   flex-shrink: 0;
 
-  transition: 0.4s ease;
+  transition: 0.6s ease;
   transform: ${({ step }) => {
     return step;
   }};
@@ -17,7 +17,7 @@ export const StyledMain = styled.main`
 `;
 
 export const StyledHeader = styled.header`
-  width: 60%;
+  width: 65%;
 
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/static/images/step1.jpg");
@@ -31,6 +31,7 @@ export const StyledHeader = styled.header`
   @media (max-width: 768px) {
     width: 100%;
     padding: 20px;
+    height: auto;
   }
 `;
 
@@ -120,7 +121,7 @@ export const StyledTitleDiv = styled.div`
   h1 {
     font-size: 58px;
     margin-bottom: 40px;
-    font-weight: 800;
+    font-weight: 700;
     max-width: 650px;
   }
 
@@ -131,7 +132,7 @@ export const StyledTitleDiv = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-top: 20px;
+    margin: 20px 0;
     width: 100%;
     text-align: center;
     padding: 0;
@@ -155,8 +156,7 @@ export const StyledTitleDiv = styled.div`
 `;
 
 export const StyledSection = styled.section`
-  width: 40%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 30px 60px;
 
@@ -228,7 +228,7 @@ export const Button = styled.button`
   }
 
   p {
-    font-weight: ${({ city, thisCity }) => (city === thisCity ? "800" : "600")};
+    font-weight: ${({ city, thisCity }) => (city === thisCity ? "700" : "500")};
   }
   @media (max-width: 768px) {
     padding: 10px;

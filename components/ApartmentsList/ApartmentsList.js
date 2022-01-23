@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { data } from "../../public/static/data";
 import {
   Wrapper,
@@ -14,16 +15,18 @@ import {
   Footer,
   Text,
   Button,
+  PrimaryButton,
 } from "./ApartmentsList.styled";
 
 const ApartmentsList = () => {
   const [apartments, setApartments] = useState(data);
+  console.log(data);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storage = localStorage.getItem("apts");
 
-      setApartments(JSON.parse(storage));
+      return storage ? setApartments(JSON.parse(storage)) : setApartments(data);
     }
   }, []);
 
@@ -47,7 +50,7 @@ const ApartmentsList = () => {
           <p>Learn more about our homes and book a tour today:</p>
         </Heading>
         <Grid>
-          {apartments.map((apt, index) => {
+          {apartments?.map((apt, index) => {
             return (
               <GridItem key={index}>
                 <ImageWrapper>
@@ -85,6 +88,9 @@ const ApartmentsList = () => {
             );
           })}
         </Grid>
+        <Link href="/" passHref>
+          <PrimaryButton>Back Home</PrimaryButton>
+        </Link>
       </Section>
     </Wrapper>
   );

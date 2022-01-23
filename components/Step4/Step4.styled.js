@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-shrink: 0;
-  transition: 0.4s ease;
+  transition: 0.6s ease;
   transform: ${({ step }) => {
     return step;
   }};
@@ -36,7 +36,7 @@ export const HeaderMini = styled.div`
   margin-top: 120px;
   h1 {
     font-size: 44px;
-    font-weight: 800;
+    font-weight: 700;
     color: white;
     text-transform: capitalize;
     margin-bottom: 40px;
@@ -124,6 +124,7 @@ export const Section = styled.section`
     font-size: 44px;
     color: #2a2a2a;
     margin-bottom: 20px;
+    font-weight: 700;
   }
 
   p {

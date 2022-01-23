@@ -11,13 +11,13 @@ const Bar = () => {
       setWidth(0);
     }
     if (selections.length === 1) {
-      setWidth("25%");
+      setWidth("28%");
     }
     if (selections.length === 2) {
       setWidth("50%");
     }
     if (selections.length === 3) {
-      setWidth("75%");
+      setWidth("72%");
     }
     if (selections.length === 4) {
       setWidth("100%");
@@ -27,15 +27,15 @@ const Bar = () => {
   return (
     <StyledBar>
       <Progress width={width}></Progress>
-      <Point left={"25%"}></Point>
+      <Point left={"28%"}></Point>
       <Point left={"50%"}></Point>
-      <Point left={"75%"}></Point>
+      <Point left={"72%"}></Point>
       <Title left={"0"} color={selections.length === 0 ? "color" : undefined}>
-        <p>Your city</p>
+        <p style={{ textAlign: "left" }}>Your city</p>
         <p>{selections[0]}</p>
       </Title>
       <Title
-        left={"25%"}
+        left={"28%"}
         center={true}
         color={selections.length === 1 ? "color" : undefined}
       >
@@ -64,7 +64,7 @@ const Bar = () => {
         </p>
       </Title>
       <Title
-        left={"75%"}
+        left={"72%"}
         center={true}
         color={selections.length === 3 ? "color" : undefined}
       >

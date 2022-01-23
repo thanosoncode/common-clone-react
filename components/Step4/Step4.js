@@ -57,7 +57,7 @@ const Step4 = () => {
           <button
             onClick={() => {
               dispatch(filterByBudget({ budget }));
-              setTimeout(() => dispatch(goToNextStep()), 1000);
+              setTimeout(() => dispatch(goToNextStep()), 400);
             }}
           >
             Continue

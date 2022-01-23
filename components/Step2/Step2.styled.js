@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-shrink: 0;
-  transition: 0.4s ease;
+  transition: 0.6s ease;
   transform: ${({ step }) => {
     return step;
   }};
@@ -33,7 +33,6 @@ export const Header = styled.header`
 `;
 
 export const Section = styled.section`
-  width: 35%;
   max-width: 500px;
   padding: 30px 60px;
   display: flex;
@@ -56,6 +55,7 @@ export const Section = styled.section`
     h1 {
       font-size: 22px;
       margin: 30px 0;
+      font-weight: 700;
     }
   }
 `;
@@ -98,7 +98,7 @@ export const Button = styled.button`
   border: 2px solid black;
   cursor: pointer;
   background: white;
-  font-weight: ${({ selected, name }) => (selected === name ? "800" : "600")};
+  font-weight: ${({ selected, name }) => (selected === name ? "700" : "500")};
 
   border: 2px solid
     ${({ selected, name }) => (selected === name ? "#D34D35" : "#ababab")};
@@ -119,7 +119,7 @@ export const HeaderMini = styled.div`
 
   h1 {
     font-size: 44px;
-    font-weight: 800;
+    font-weight: 700;
     color: white;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -201,6 +201,15 @@ export const Table = styled.table`
   }
 `;
 
+export const Td = styled.td`
+  text-align: center;
+  font-size: 30px;
+
+  /* @media (max-width: 768px) {
+    font-size: 17px;
+  } */
+`;
+
 export const Footer = styled.footer`
   padding: 20px 0;
   border-top: 1px solid gray;
@@ -229,7 +238,7 @@ export const Footer = styled.footer`
     z-index: 0;
     padding: 10px 20px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 26px;
   }
 

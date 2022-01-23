@@ -11,14 +11,16 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
+  transition: 0.6s ease;
   transform: ${({ step }) => {
     return step;
   }};
 
   h1 {
-    font-size: 52px;
+    font-size: 40px;
     border-bottom: 3px solid white;
     padding-bottom: 10px;
+    font-weight: 500;
   }
 
   @media (max-width: 768px) {
@@ -44,7 +46,7 @@ export const Section = styled.section`
   transition: 0.5s ease;
 
   h4 {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: normal;
     color: ${({ showPetSection }) => (showPetSection ? "#777" : "white")};
     transition: 0.3s ease;
@@ -90,9 +92,9 @@ export const Button1 = styled.button`
       return "#ddd";
     }
   }};
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   transition: 0.3s ease;
   border: 2px solid white;
@@ -121,9 +123,9 @@ export const Button2 = styled.button`
       return "#ddd";
     }
   }};
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   transition: 0.3s ease;
   border: 2px solid white;
@@ -141,7 +143,7 @@ export const PrimaryButton = styled.button`
   background: ${({ theme }) => theme.color};
   opacity: ${({ opacity }) => opacity};
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   font-weight: 600;
   border: none;
