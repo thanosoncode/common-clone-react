@@ -203,11 +203,11 @@ export const Table = styled.table`
 
 export const Td = styled.td`
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 17px;
-  } */
+  }
 `;
 
 export const Footer = styled.footer`

@@ -183,7 +183,7 @@ export const Button = styled.button`
 
 export const PrimaryButton = styled.button`
   display: block;
-  width: 300px;
+  width: 200px;
 
   margin: 130px auto 60px auto;
 
